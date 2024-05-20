@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AppOllie.Views.PagInicial"
+             Title="Login">
+
+    <ContentPage.Content>
+        <VerticalStackLayout>
+
+            <Label Text="Login"
+                   TextColor="#E78A0F"
+                   FontAttributes="Bold"/>
+
+            <Label Text="Email: " />
+            <Entry x:Name="txt_email" />
+
+            <Label Text="Senha: " />
+            <Entry x:Name="txt_senha" />
+
+            <Button x:Name="acesso_Btn"
+                    Text="Entrar"
+                    FontAttributes="Bold"
+                    BackgroundColor="#E6B069"
+                    TextColor="White"
+                    Clicked="acesso_Btn_Clicked"
+                    HorizontalOptions="Fill" />
+
+        </VerticalStackLayout>
+    </ContentPage.Content>
+
+</ContentPage>

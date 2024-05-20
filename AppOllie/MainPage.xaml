@@ -1,0 +1,55 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AppOllie.MainPage">
+
+    <ScrollView>
+        <Frame>
+        <VerticalStackLayout
+            Padding="30"
+            Spacing="25">
+
+                <Frame.Background>
+                    <LinearGradientBrush EndPoint="0,1">
+                        <GradientStop Color="#E78A0F"
+                          Offset="0.1" />
+                        <GradientStop Color="white"
+                          Offset="1.0" />
+                    </LinearGradientBrush>
+                </Frame.Background>
+
+                <Image
+                Source="dotnet_bot.png"
+                HeightRequest="185"
+                Aspect="AspectFit"
+                SemanticProperties.Description="dot net bot in a race car number eight" />
+
+            <Label
+                Text="Bem-vindo"
+                Style="{StaticResource Headline}"
+                SemanticProperties.HeadingLevel="Level1" />
+
+            <Button
+                x:Name="login_Btn"
+                Text="Pais/Responsáveis"
+                FontAttributes="Bold"
+                BackgroundColor="#E6B069"
+                TextColor="White"
+                SemanticProperties.Hint="Counts the number of times you click"
+                Clicked="login_Btn_Clicked"
+                HorizontalOptions="Fill" />
+
+            <Button
+                x:Name="login2_Btn"
+                Text="Criança" 
+                FontAttributes="Bold"
+                BackgroundColor="#E6B069"
+                TextColor="White"
+                Clicked="login2_Btn_Clicked"
+                HorizontalOptions="Fill" />
+
+        </VerticalStackLayout>
+        </Frame>
+    </ScrollView>
+
+</ContentPage>
