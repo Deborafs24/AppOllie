@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AppOllie.Views.Cadastro"
+             Title="Cadastro">
+
+        <ContentPage.Content>
+          <ScrollView>
+            <VerticalStackLayout>
+
+                <Image Source="Resources\Images\Logo.png" 
+                   HeightRequest="200"
+                   WidthRequest="200"/>
+
+                <Label Text="Cadastro"
+                       TextColor="#E78A0F"
+                       FontAttributes="Bold"
+                       Padding="50"
+                       HorizontalTextAlignment="Center"
+                       FontSize="30"/>
+
+                <Frame BackgroundColor="#FFDECE" BorderColor="#E25822" Padding="20" CornerRadius="15"
+                   HeightRequest="1000"
+                   WidthRequest="800">
+                    <StackLayout Spacing="10" >
+
+                        <Label Text="Dados do Responsável e da Criança"
+                           TextColor="#E78A0F"
+                           FontAttributes="Bold"
+                           Padding="50"
+                           HorizontalTextAlignment="Center"
+                           FontSize="30"/>
+
+                        <Label Text="Nome (responsável): " />
+                        <Entry x:Name="txt_nomeres"
+                               BackgroundColor="White"/>
+
+                        <Label Text="Data de Nascimento (responsável): " />
+                        <Entry x:Name="txt_nascires"
+                               BackgroundColor="White"/>
+
+                        <Label Text="Estado Civil: " />
+                        <Entry x:Name="txt_estadoc"
+                               BackgroundColor="White" />
+
+                        <Label Text="O que você é da criança?  " />
+                        <Entry x:Name="txt_relcrianca"
+                               BackgroundColor="White" />
+
+                        <Label Text="Nome (criança): " />
+                        <Entry x:Name="txt_nomecri"
+                               BackgroundColor="White" />
+
+                        <Label Text="Data de Nascimento (criança): " />
+                        <Entry x:Name="txt_nascicri"
+                               BackgroundColor="White" />
+
+                        <Label Text="Email: " />
+                        <Entry x:Name="txt_email2"
+                               BackgroundColor="White" />
+
+                        <Label Text="Senha: " />
+                        <Entry x:Name="txt_senha2"
+                               BackgroundColor="White" 
+                               Margin="0,0,0,20" />
+
+                        <Button x:Name="cadastro_Btn"
+                                Text="Cadastrar"
+                                FontAttributes="Bold"
+                                BackgroundColor="#E6B069"
+                                TextColor="White"
+                                Clicked="cadastro_Btn_Clicked"
+                                HorizontalOptions="Fill" />
+
+                    </StackLayout>
+
+
+                </Frame>
+            </VerticalStackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+
+</ContentPage>

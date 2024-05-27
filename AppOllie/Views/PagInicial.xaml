@@ -7,24 +7,50 @@
     <ContentPage.Content>
         <VerticalStackLayout>
 
-            <Label Text="Login"
-                   TextColor="#E78A0F"
-                   FontAttributes="Bold"/>
+            <Image Source="Resources\Images\Logo.png" 
+                   HeightRequest="200"
+                   WidthRequest="200"/>
 
-            <Label Text="Email: " />
-            <Entry x:Name="txt_email" />
+            <Frame BackgroundColor="#FFDECE" BorderColor="#E25822" Padding="20" CornerRadius="15"
+                   HeightRequest="700"
+                   WidthRequest="800">
+                <StackLayout Spacing="10" >
 
-            <Label Text="Senha: " />
-            <Entry x:Name="txt_senha" />
+                    <Label Text="Login"
+                           TextColor="#E78A0F"
+                           FontAttributes="Bold"
+                           Padding="50"
+                           HorizontalTextAlignment="Center"
+                           FontSize="30"/>
 
-            <Button x:Name="acesso_Btn"
-                    Text="Entrar"
-                    FontAttributes="Bold"
-                    BackgroundColor="#E6B069"
-                    TextColor="White"
-                    Clicked="acesso_Btn_Clicked"
-                    HorizontalOptions="Fill" />
+                    <Label Text="Email: " />
+                    <Entry x:Name="txt_email" 
+                           BackgroundColor="White" />
 
+                    <Label Text="Senha: " />
+                    <Entry x:Name="txt_senha"
+                           BackgroundColor="White"/>
+
+                    <Button x:Name="acesso_Btn"
+                            Text="Entrar"
+                            FontAttributes="Bold"
+                            BackgroundColor="#E6B069"
+                            TextColor="White"
+                            Clicked="acesso_Btn_Clicked"
+                            HorizontalOptions="Fill" />
+
+                    <Button x:Name="cadastro_Btn"
+                            Text="Não sou cadastrado! Clique aqui"
+                            FontAttributes="Bold"
+                            BackgroundColor="Transparent"
+                            TextColor="#0869B0"
+                            Clicked="cadastro_Btn_Clicked"
+                            HorizontalOptions="Fill" />
+
+                </StackLayout>
+            
+            
+            </Frame>
         </VerticalStackLayout>
     </ContentPage.Content>
 
