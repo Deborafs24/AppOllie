@@ -20,7 +20,7 @@
                        FontSize="30"/>
 
                 <Frame BackgroundColor="#FFDECE" BorderColor="#E25822" Padding="20" CornerRadius="15"
-                   HeightRequest="1000"
+                   HeightRequest="1100"
                    WidthRequest="800">
                     <StackLayout Spacing="10" >
 
@@ -54,6 +54,65 @@
                         <Label Text="Data de Nascimento (criança): " />
                         <Entry x:Name="txt_nascicri"
                                BackgroundColor="White" />
+
+                        <StackLayout>
+                            <Label Text="Gênero (criança):" />
+                            <StackLayout RadioButtonGroup.GroupName="genero"
+                                         Orientation="Horizontal">
+                                <RadioButton Value="Feminino">
+                                    <RadioButton.Content>
+                                        <StackLayout>
+                                            <Label Text="Feminino"
+                                                   HorizontalOptions="Center"
+                                                   VerticalOptions="End" />
+                                        </StackLayout>
+                                    </RadioButton.Content>
+                                </RadioButton>
+                                <RadioButton Value="Masculino">
+                                    <RadioButton.Content>
+                                        <StackLayout>
+                                            <Label Text="Masculino"
+                                                   HorizontalOptions="Center"
+                                                   VerticalOptions="End" />
+                                        </StackLayout>
+                                    </RadioButton.Content>
+                                </RadioButton>
+                            </StackLayout>
+                        </StackLayout>
+
+                        <StackLayout>
+                            <Label Text="Gênero (responsável):" />
+                            <StackLayout RadioButtonGroup.GroupName="gen"
+                                         Orientation="Horizontal">
+                                <RadioButton Value="Feminino">
+                                    <RadioButton.Content>
+                                        <StackLayout>
+                                            <Label Text="Feminino"
+                                                   HorizontalOptions="Center"
+                                                   VerticalOptions="End" />
+                                        </StackLayout>
+                                    </RadioButton.Content>
+                                </RadioButton>
+                                <RadioButton Value="Masculino">
+                                    <RadioButton.Content>
+                                        <StackLayout>
+                                            <Label Text="Masculino"
+                                                   HorizontalOptions="Center"
+                                                   VerticalOptions="End" />
+                                        </StackLayout>
+                                    </RadioButton.Content>
+                                </RadioButton>
+                                <RadioButton Value="Outro">
+                                    <RadioButton.Content>
+                                        <StackLayout>
+                                            <Label Text="Outro"
+                                                   HorizontalOptions="Center"
+                                                   VerticalOptions="End" />
+                                        </StackLayout>
+                                    </RadioButton.Content>
+                                </RadioButton>
+                            </StackLayout>
+                        </StackLayout>
 
                         <Label Text="Email: " />
                         <Entry x:Name="txt_email2"

@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AppOllie.Views.Permissoes"
+             BackgroundColor="#DFB78B"
+             Title="Permissoes">
+
+    <ContentPage.Content>
+        <ScrollView>
+            <VerticalStackLayout>
+
+                <Label Text="Responsável"
+                       TextColor="White"
+                       FontAttributes="Bold"
+                       Padding="50"
+                       HorizontalTextAlignment="Center"
+                       FontSize="30"/>
+
+                <Label Text="Permissões"
+                       TextColor="#E78A0F"
+                       FontAttributes="Bold"
+                       Padding="50"
+                       HorizontalTextAlignment="Center"
+                       FontSize="30"/>
+
+                <Frame BackgroundColor="#FFDECE" BorderColor="#E25822" Padding="20" CornerRadius="15"
+                       HeightRequest="300"
+                       WidthRequest="300">
+                    <StackLayout Spacing="10">
+
+                        <StackLayout>
+                            <Label Text="A criança brincou / se exercitou?" />
+                            <Label Text="700 Pontos" 
+                                   FontAttributes="Bold"/>
+                            <StackLayout RadioButtonGroup.GroupName="resposta"
+                                         Orientation="Horizontal" >
+                                <RadioButton Value="SIM">
+                                    <RadioButton.Content>
+                                        <StackLayout>
+                                            <Label Text="SIM"
+                                                   HorizontalOptions="Center"
+                                                   VerticalOptions="End" />
+                                        </StackLayout>
+                                    </RadioButton.Content>
+                                </RadioButton>
+                                <RadioButton Value="NÃO">
+                                    <RadioButton.Content>
+                                        <StackLayout>
+                                            <Label Text="NÃO"
+                                                   HorizontalOptions="Center"
+                                                   VerticalOptions="End" />
+                                        </StackLayout>
+                                    </RadioButton.Content>
+                                </RadioButton>
+                            </StackLayout>
+                        </StackLayout>
+
+                        <StackLayout>
+                            <Label Text="A criança se alimentou bem?" />
+                            <Label Text="1000 Pontos" 
+                                   FontAttributes="Bold"/>
+                            <StackLayout RadioButtonGroup.GroupName="resposta"
+                                         Orientation="Horizontal">
+                                <RadioButton Value="SIM">
+                                    <RadioButton.Content>
+                                        <StackLayout>
+                                            <Label Text="SIM"
+                                                   HorizontalOptions="Center"
+                                                   VerticalOptions="End" />
+                                        </StackLayout>
+                                    </RadioButton.Content>
+                                </RadioButton>
+                                <RadioButton Value="NÃO">
+                                    <RadioButton.Content>
+                                        <StackLayout>
+                                            <Label Text="NÃO"
+                                                   HorizontalOptions="Center"
+                                                   VerticalOptions="End" />
+                                        </StackLayout>
+                                    </RadioButton.Content>
+                                </RadioButton>
+                            </StackLayout>
+                        </StackLayout>
+
+                        <StackLayout>
+                            <Label Text="A criança leu algum livro?" />
+                            <Label Text="500 Pontos" 
+                                   FontAttributes="Bold"/>
+                            <StackLayout RadioButtonGroup.GroupName="resposta"
+                                         Orientation="Horizontal">
+                                <RadioButton Value="SIM">
+                                    <RadioButton.Content>
+                                        <StackLayout>
+                                            <Label Text="SIM"
+                                                   HorizontalOptions="Center"
+                                                   VerticalOptions="End" />
+                                        </StackLayout>
+                                    </RadioButton.Content>
+                                </RadioButton>
+                                <RadioButton Value="NÃO">
+                                    <RadioButton.Content>
+                                        <StackLayout>
+                                            <Label Text="NÃO"
+                                                   HorizontalOptions="Center"
+                                                   VerticalOptions="End" />
+                                        </StackLayout>
+                                    </RadioButton.Content>
+                                </RadioButton>
+                            </StackLayout>
+                        </StackLayout>
+
+                    </StackLayout>
+                </Frame>
+
+            </VerticalStackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>
