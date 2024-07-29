@@ -9,10 +9,18 @@
         <ScrollView>
             <VerticalStackLayout>
 
+                <Frame.Background>
+                    <LinearGradientBrush EndPoint="0,1">
+                        <GradientStop Color= "White"
+                                      Offset="1.0" />
+                        <GradientStop Color="#FFD2AF"
+                                      Offset="0.50" />
+                    </LinearGradientBrush>
+                </Frame.Background>
+
                 <Label Text="Responsável"
                        TextColor="White"
                        FontAttributes="Bold"
-                       Padding="50"
                        HorizontalTextAlignment="Center"
                        FontSize="30"/>
 

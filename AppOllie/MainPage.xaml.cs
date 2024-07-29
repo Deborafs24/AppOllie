@@ -21,7 +21,7 @@ namespace AppOllie
             await Navigation.PushAsync(new Views.PagInicial());
         }
 
-        private void login2_Btn_Clicked(object sender, EventArgs e)
+        private async void login2_Btn_Clicked(object sender, EventArgs e)
         {
             
         }

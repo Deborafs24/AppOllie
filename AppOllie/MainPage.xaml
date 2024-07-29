@@ -18,12 +18,10 @@
                     </LinearGradientBrush>
                 </Frame.Background>
 
-               
-                    <Image Source="Resources\Images\Logo.png" 
+                <Image Source="Resources\Images\Logo.png" 
                            HeightRequest="200"
                            WidthRequest="200"/>
          
-
                 <Label
                 Text="Bem-vindo"
                 Style="{StaticResource Headline}"

@@ -7,9 +7,9 @@ public partial class PagInicial : ContentPage
 		InitializeComponent();
 	}
 
-    private void acesso_Btn_Clicked(object sender, EventArgs e)
+    private async void acesso_Btn_Clicked(object sender, EventArgs e)
     {
-
+        await Navigation.PushAsync(new Views.Permissoes());
     }
 
     private void esqueci_Btn_Clicked(object sender, EventArgs e)
@@ -20,7 +20,5 @@ public partial class PagInicial : ContentPage
     private async void cadastro_Btn_Clicked(object sender, EventArgs e)
     {
         await Navigation.PushAsync(new Views.Cadastro());
-
-       // await Navigation.PushAsync(new Views.Permissoes());
     }
 }
