@@ -34,7 +34,7 @@
                     <Button x:Name="acesso_Btn"
                             Text="Entrar"
                             FontAttributes="Bold"
-                            BackgroundColor="#E6B069"
+                            BackgroundColor="#E78A0F"
                             TextColor="White"
                             Clicked="acesso_Btn_Clicked"
                             HorizontalOptions="Fill" />

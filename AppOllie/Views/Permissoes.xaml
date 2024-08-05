@@ -11,23 +11,21 @@
 
                 <Frame.Background>
                     <LinearGradientBrush EndPoint="0,1">
-                        <GradientStop Color= "White"
+                        <GradientStop Color= "#FFD2AF"
                                       Offset="1.0" />
-                        <GradientStop Color="#FFD2AF"
+                        <GradientStop Color="White"
                                       Offset="0.50" />
                     </LinearGradientBrush>
                 </Frame.Background>
 
-                <Label Text="Responsável"
-                       TextColor="White"
-                       FontAttributes="Bold"
-                       HorizontalTextAlignment="Center"
-                       FontSize="30"/>
+                <Image Source="perfil.png"
+                       WidthRequest="30"
+                       HeightRequest="30"/>
 
                 <Label Text="Permissões"
                        TextColor="#E78A0F"
                        FontAttributes="Bold"
-                       Padding="50"
+                       Padding="30"
                        HorizontalTextAlignment="Center"
                        FontSize="30"/>
 
@@ -38,7 +36,7 @@
 
                         <StackLayout>
                             <Label Text="A criança brincou / se exercitou?" />
-                            <Label Text="700 Pontos" 
+                            <Label Text="10 Pontos" 
                                    FontAttributes="Bold"/>
                             <StackLayout RadioButtonGroup.GroupName="resposta"
                                          Orientation="Horizontal" >
@@ -65,9 +63,9 @@
 
                         <StackLayout>
                             <Label Text="A criança se alimentou bem?" />
-                            <Label Text="1000 Pontos" 
+                            <Label Text="10 Pontos" 
                                    FontAttributes="Bold"/>
-                            <StackLayout RadioButtonGroup.GroupName="resposta"
+                            <StackLayout RadioButtonGroup.GroupName="resp"
                                          Orientation="Horizontal">
                                 <RadioButton Value="SIM">
                                     <RadioButton.Content>
@@ -92,9 +90,9 @@
 
                         <StackLayout>
                             <Label Text="A criança leu algum livro?" />
-                            <Label Text="500 Pontos" 
+                            <Label Text="10 Pontos" 
                                    FontAttributes="Bold"/>
-                            <StackLayout RadioButtonGroup.GroupName="resposta"
+                            <StackLayout RadioButtonGroup.GroupName="respos"
                                          Orientation="Horizontal">
                                 <RadioButton Value="SIM">
                                     <RadioButton.Content>
@@ -119,6 +117,17 @@
 
                     </StackLayout>
                 </Frame>
+
+                <Button x:Name="sair_Btn"
+                        Text="Sair"
+                        WidthRequest="80"
+                        HeightRequest="10"
+                        Margin="10"
+                        FontAttributes="Bold"
+                        BackgroundColor="#E78A0F"
+                        TextColor="White"
+                        Clicked="sair_Btn_Clicked"
+                        HorizontalOptions="Fill" />
 
             </VerticalStackLayout>
         </ScrollView>
