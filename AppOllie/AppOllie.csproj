@@ -57,21 +57,12 @@
 	</ItemGroup>
 
 	<ItemGroup>
-	  <AndroidJavaSource Remove="Helpers\**" />
-	  <AndroidLibrary Remove="Helpers\**" />
-	  <AndroidNativeLibrary Remove="Helpers\**" />
 	  <AndroidResource Remove="Views\NovaPasta\**" />
-	  <Compile Remove="Helpers\**" />
 	  <Compile Remove="Views\NovaPasta\**" />
-	  <EmbeddedResource Remove="Helpers\**" />
 	  <EmbeddedResource Remove="Views\NovaPasta\**" />
-	  <JavaSourceJar Remove="Helpers\**" />
 	  <MauiCss Remove="Views\NovaPasta\**" />
 	  <MauiXaml Remove="Views\NovaPasta\**" />
-	  <None Remove="Helpers\**" />
 	  <None Remove="Views\NovaPasta\**" />
-	  <ProguardConfiguration Remove="Helpers\**" />
-	  <TransformFile Remove="Helpers\**" />
 	</ItemGroup>
 
 	<ItemGroup>
@@ -108,10 +99,6 @@
 	  <MauiXaml Update="Views\Permissoes.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
-	</ItemGroup>
-
-	<ItemGroup>
-	  <Folder Include="Models\" />
 	</ItemGroup>
 
 </Project>

@@ -1,7 +1,9 @@
+using SQLite;
+
 namespace AppOllie.Views;
 
 public partial class Cadastro : ContentPage
-{
+{   
 	public Cadastro()
 	{
 		InitializeComponent();
