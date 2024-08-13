@@ -7,7 +7,7 @@ public partial class PagInicial : ContentPage
 		InitializeComponent();
 	}
 
-    private void acesso_Btn_Clicked(object sender, EventArgs e)
+    private async void acesso_Btn_Clicked(object sender, EventArgs e)
     {
         try
         {
@@ -26,16 +26,22 @@ public partial class PagInicial : ContentPage
                 senha = txt_senha.Text
             };
 
-            if(lista_usuarios.Any(
+            if (lista_usuarios.Any(
                 i => dados_digitados.Email == i.Email &&
                      dados_digitados.senha == i.senha))
             {
+                await SecureStorage.Default.SetAsync("usuario_logado", dados_digitados.Email);
 
+                App.Current.MainPage = new Permissoes();
+            }
+            else
+            {
+                throw new Exception("Usuário ou senha incorretos.");
             }
 
         } catch(Exception ex)
         {
-            DisplayAlert("Ops", ex.Message, "Fechar");
+            await DisplayAlert("Ops", ex.Message, "Fechar");
         }
 
         // await Navigation.PushAsync(new Views.Permissoes());
@@ -46,8 +52,9 @@ public partial class PagInicial : ContentPage
 
     }
 
-    private async void cadastro_Btn_Clicked(object sender, EventArgs e)
+    private void cadastro_Btn_Clicked(object sender, EventArgs e)
     {
-        await Navigation.PushAsync(new Views.Cadastro());
+        App.Current.MainPage = new Cadastro();
+        // await Navigation.PushAsync(new Views.Cadastro());
     }
 }
