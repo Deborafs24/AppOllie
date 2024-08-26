@@ -11,7 +11,7 @@ public partial class Cadastro : ContentPage
 
     private async void cadastro_Btn_Clicked(object sender, EventArgs e)
     {
-        bool confirmacao = await DisplayAlert("Você foi cadastrado", "Sair da tela de cadastro", "Entrar", "Não");
+        bool confirmacao = await DisplayAlert("Você já possui um cadastro", "Entrar no app", "Entrar", "Não");
 
         if (confirmacao)
         {
