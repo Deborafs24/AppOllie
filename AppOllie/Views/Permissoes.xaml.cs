@@ -25,4 +25,15 @@ public partial class Permissoes : ContentPage
         }
        // await Navigation.PushAsync(new Views.PagInicial());
     }
+
+    private async void tempo_Btn_Clicked(object sender, EventArgs e)
+    {
+        bool confirmacao = await DisplayAlert("Tem certeza?", "Ir para tela tempo?", "Sim", "Não");
+
+        if (confirmacao)
+        {
+            SecureStorage.Default.Remove("usuario_logado");
+            App.Current.MainPage = new Tempo();
+        }
+    }
 }

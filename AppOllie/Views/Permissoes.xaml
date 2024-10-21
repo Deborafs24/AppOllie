@@ -129,6 +129,17 @@
                         Clicked="sair_Btn_Clicked"
                         HorizontalOptions="Fill" />
 
+                <Button x:Name="tempo_Btn"
+                        Text="Tempo"
+                        WidthRequest="80"
+                        HeightRequest="10"
+                        Margin="10"
+                        FontAttributes="Bold"
+                        BackgroundColor="#E78A0F"
+                        TextColor="White"
+                        Clicked="tempo_Btn_Clicked"
+                        HorizontalOptions="Fill" />
+
             </VerticalStackLayout>
         </ScrollView>
     </ContentPage.Content>

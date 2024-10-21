@@ -7,7 +7,7 @@
     <ContentPage.Content>
         <VerticalStackLayout>
 
-            <Image Source="Resources\Images\Logo.png" 
+            <Image Source="Logo.png" 
                    HeightRequest="200"
                    WidthRequest="200"/>
 

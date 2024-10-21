@@ -8,9 +8,9 @@
           <ScrollView>
             <VerticalStackLayout>
 
-                <Image Source="Resources\Images\Logo.png" 
-                   HeightRequest="200"
-                   WidthRequest="200"/>
+                <Image Source="Logo.png" 
+                       HeightRequest="200"
+                       WidthRequest="200"/>
 
                 <Label Text="Cadastro"
                        TextColor="#E78A0F"

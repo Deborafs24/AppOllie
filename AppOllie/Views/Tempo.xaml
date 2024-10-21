@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AppOllie.Views.Tempo"
+             Title="Tempo">
+
+    <ContentPage.Content>
+        <ScrollView>
+            <VerticalStackLayout>
+
+                <Frame.Background>
+                    <LinearGradientBrush EndPoint="0,1">
+                        <GradientStop Color= "#FFD2AF"
+                                      Offset="1.0" />
+                        <GradientStop Color="White"
+                                      Offset="0.50" />
+                    </LinearGradientBrush>
+                </Frame.Background>
+                
+                <Image Source="relogio.png" 
+                       WidthRequest="30"
+                       HeightRequest="30"/>
+
+                <Label Text="Tela de Tempo"
+                       TextColor="#E78A0F"
+                       FontAttributes="Bold"
+                       Padding="30"
+                       HorizontalTextAlignment="Center"
+                       FontSize="30"/>
+
+                <Image Source="tempo.png" 
+                       WidthRequest="600"
+                       HeightRequest="700"/>
+
+                <Button x:Name="permissoes_Btn"
+                        Text="Permissões"
+                        WidthRequest="110"
+                        HeightRequest="10"
+                        Margin="10"
+                        FontAttributes="Bold"
+                        BackgroundColor="#E78A0F"
+                        TextColor="White"
+                        Clicked="permissoes_Btn_Clicked"
+                        HorizontalOptions="Fill" />
+
+            </VerticalStackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+    
+</ContentPage>

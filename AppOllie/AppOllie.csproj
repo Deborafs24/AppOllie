@@ -66,20 +66,10 @@
 	</ItemGroup>
 
 	<ItemGroup>
-	  <AndroidResource Remove="Resources\Images\Logo.png" />
-	</ItemGroup>
-
-	<ItemGroup>
-	  <MauiImage Remove="Resources\Images\Logo.png" />
-	</ItemGroup>
-
-	<ItemGroup>
-	  <None Remove="Resources\Images\Logo.png" />
+	  <None Remove="Resources\Images\logo.png" />
 	  <None Remove="Resources\Images\perfil.png" />
-	</ItemGroup>
-
-	<ItemGroup>
-	  <Content Include="Resources\Images\Logo.png" />
+	  <None Remove="Resources\Images\relogio.png" />
+	  <None Remove="Resources\Images\tempo.png" />
 	</ItemGroup>
 
 	<ItemGroup>
@@ -97,6 +87,9 @@
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
 	  <MauiXaml Update="Views\Permissoes.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="Views\Tempo.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
 	</ItemGroup>
